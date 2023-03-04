@@ -1,0 +1,59 @@
+###
+POST http://localhost:3000/api/v1/matriculas/nueva-matricula
+Content-Type: application/json
+
+{
+    "nombre_estudiante": "Nicolas",
+    "universidad": {
+        "nombre": "Universidad de Manizales",
+        "nit̀": "988778-1",
+        "tel": "8987676",
+        "direccion": "Carrera 23 # 11-59"
+    },
+    "nro_matricula": 34379,
+    "nro_recibo": 321488,
+    "periodo": 1,
+    "programa": "Ingenieria de sistemas",
+    "facultad": "Ingeniería",
+    "materia": {
+        "nombre": "Programación I",
+        "creditos": "3",
+        "costo_credito": "250000"
+    },
+    "total_a_pagar": 3120000
+}
+
+###
+PUT http://localhost:3000/api/v1/matriculas/6403c47dc2e887762dc7aa22
+Content-Type: application/json
+
+{
+    "nombre_estudiante": "Nicolas",
+    "universidad": {
+        "nombre": "Uniminuto",
+        "nit̀": "98874356-1",
+        "tel": "8987344",
+        "direccion": "Carrera 23 # 11-59"
+    },
+    "nro_matricula": 34380,
+    "nro_recibo": 321490,
+    "periodo": 1,
+    "programa": "Ingenieria de sistemas",
+    "facultad": "Ingeniería",
+    "materia": {
+        "nombre": "Programación I",
+        "creditos": "3",
+        "costo_credito": "350000"
+    },
+    "total_a_pagar": 3220000
+}
+
+###
+GET http://localhost:3000/api/v1/matriculas/
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/v1/matriculas/6403c47dc2e887762dc7aa22
+
+###
+DELETE http://localhost:3000/api/v1/matriculas/6403c47dc2e887762dc7aa22
